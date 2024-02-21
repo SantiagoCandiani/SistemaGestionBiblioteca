@@ -11,6 +11,4 @@ import java.util.List;
 public class Inventario {
     private List<Libro> libros;
 
-    // Aquí van los métodos para agregar libros, buscar libros, etc.
-
 }

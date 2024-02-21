@@ -1,7 +1,15 @@
+import menus.MenuPrincipal;
+
 public class SistemaGestionBibliotecaApp {
     public static void main(String[] args) {
 
-        System.out.println("Hello and welcome!");
+        try {
+            MenuPrincipal menuP = new MenuPrincipal();
+            menuP.menuPrincipal();
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
 
     }//main

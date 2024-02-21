@@ -19,6 +19,4 @@ public class Libro {
     private boolean disponibilidad;
     final LocalDate altaLibro = LocalDate.now();
 
-    // Aquí van los métodos getter y setter para cada atributo
-
 }
