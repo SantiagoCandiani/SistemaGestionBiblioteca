@@ -28,8 +28,8 @@ public class Usuario {
         sb.append("Apellido: ").append(apellido).append("\n");
         sb.append("Número de Identificación: ").append(numeroIdentificacion).append("\n");
         sb.append("Fecha de Alta de Usuario: ").append(altaUsuario).append("\n");
-        sb.append("Activo: ").append(activo).append("\n");
-        sb.append("Adeuda Libro: ").append(adeudaLibro).append("\n");
+        sb.append("Activo: ").append(activo ? "Sí" : "No").append("\n");
+        sb.append("Adeuda Libro: ").append(adeudaLibro ? "Sí" : "No").append("\n");
         sb.append("Libros Prestados:\n");
         for (int i = 0; i < librosPrestados.size(); i++) {
             sb.append("\tLibro ").append(i + 1).append(":\n");

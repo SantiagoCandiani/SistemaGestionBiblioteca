@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class MenuPrincipal {
 
-    private MenuUsuario menuUsu;
-    //private MenuLibro menuLib;
+    private final MenuUsuario menuUsu;
+    private final MenuLibro menuLib;
     //private MenuPrestamo menuPres;
     //private MenuInventario menuInv;
     private final Scanner scanner;
 
     public MenuPrincipal() {
         this.menuUsu = new MenuUsuario();
-        //this.menuLib = new MenuLibro();
+        this.menuLib = new MenuLibro();
         //this.menuPres = new MenuPrestamo();
         //this.menuInv = new MenuIventario();
         this.scanner = new Scanner(System.in).useDelimiter("\n");
@@ -49,11 +49,11 @@ public class MenuPrincipal {
                         presioneTecla();
                         menuPrincipal();
                         break;
-                    //case 2:
-                    //    menuLib.menuLibro();
-                    //    presioneTecla();
-                    //    menuPrincipal();
-                    //    break;
+                    case 2:
+                        menuLib.menuLibro();
+                        presioneTecla();
+                        menuPrincipal();
+                        break;
                     //case 3:
                     //    menuPres.menuPrestamo();
                     //    presioneTecla();
