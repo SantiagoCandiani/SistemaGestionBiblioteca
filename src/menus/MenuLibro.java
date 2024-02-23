@@ -91,6 +91,18 @@ public class MenuLibro {
                         presioneTecla();
                         break;
                     case 10:
+                        System.out.println("Seleccione el ISBN del Libro a reseñar de la siguiente lista:");
+                        lServicio.obtenerTodosLosLibros();
+                        lServicio.dejarResenia(scanner.next());
+                        presioneTecla();
+                        break;
+                    case 11:
+                        System.out.println("Seleccione el ISBN del Libro a calificar de la siguiente lista:");
+                        lServicio.obtenerTodosLosLibros();
+                        lServicio.calificarLibro(scanner.next());
+                        presioneTecla();
+                        break;
+                    case 12:
                         System.out.println("Saliendo del menú Libro...");
                         presioneTecla();
                         break;
@@ -107,6 +119,6 @@ public class MenuLibro {
                 opcion = 0; // Restablecer la opción para evitar un bucle infinito
             }
 
-        } while (opcion != 10);
+        } while (opcion != 12);
     }
 }

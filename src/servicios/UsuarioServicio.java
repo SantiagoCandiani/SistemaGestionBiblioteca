@@ -18,85 +18,85 @@ public class UsuarioServicio {
         this.scanner = new Scanner(System.in);
     }
 
-    //Metodo para precargar una lista de Usuarios (Gracias chatGPT!!!):
+    //Metodo para precargar una lista de Usuarios (Lo uso para hacer pruebas!!!):
     public void ingresarUsuariosPrecargados() {
 
         // Usuario 01
         List<Libro> librosPrestadosUsuario01 = Arrays.asList(
-                new Libro("Libro1", "Autor1", "ISBN01", "Genero1", 5, true ,true),
-                new Libro("Libro2", "Autor2", "ISBN02", "Genero2", 18, true, true)
+                new Libro("Libro1", "Autor1", "ISBN01", "Genero1", 5, new ArrayList<>(), new ArrayList<>(Arrays.asList(5, 7, 9)), true, true),
+                new Libro("Libro2", "Autor2", "ISBN02", "Genero2", 18, new ArrayList<>(), new ArrayList<>(Arrays.asList(8, 6, 7)), true, true)
         );
         Usuario usuario01 = new Usuario("Nombre1", "Apellido1", "ID01", librosPrestadosUsuario01, true, false);
         usuarios.add(usuario01);
 
         // Usuario 02
         List<Libro> librosPrestadosUsuario02 = Arrays.asList(
-                new Libro("Libro3", "Autor3", "ISBN03", "Genero3", 1, true, true),
-                new Libro("Libro4", "Autor4", "ISBN04", "Genero4", 3, true, true)
+                new Libro("Libro3", "Autor3", "ISBN03", "Genero3", 1, new ArrayList<>(), new ArrayList<>(Arrays.asList(1, 1, 1)), true, true),
+                new Libro("Libro4", "Autor4", "ISBN04", "Genero4", 3, new ArrayList<>(), new ArrayList<>(Arrays.asList(5)), true, true)
         );
         Usuario usuario02 = new Usuario("Nombre2", "Apellido1", "ID02", librosPrestadosUsuario02, true, false);
         usuarios.add(usuario02);
 
         // Usuario 03
         List<Libro> librosPrestadosUsuario03 = Arrays.asList(
-                new Libro("Libro5", "Autor5", "ISBN05", "Genero5", 10, true, true),
-                new Libro("Libro6", "Autor6", "ISBN06", "Genero6", 6, true, true)
+                new Libro("Libro5", "Autor5", "ISBN05", "Genero5", 10, new ArrayList<>(), new ArrayList<>(Arrays.asList(3, 1, 10)), true, true),
+                new Libro("Libro6", "Autor6", "ISBN06", "Genero6", 6, new ArrayList<>(), new ArrayList<>(Arrays.asList(1, 1, 1, 9, 8, 7, 5, 3, 10)), true, true)
         );
         Usuario usuario03 = new Usuario("Nombre3", "Apellido3", "ID03", librosPrestadosUsuario03, true, false);
         usuarios.add(usuario03);
 
         // Usuario 04
         List<Libro> librosPrestadosUsuario04 = Arrays.asList(
-                new Libro("Libro7", "Autor7", "ISBN07", "Genero7", 2, true, true),
-                new Libro("Libro8", "Autor8", "ISBN08", "Genero8", 4, true, true)
+                new Libro("Libro7", "Autor7", "ISBN07", "Genero7", 2, new ArrayList<>(), new ArrayList<>(Arrays.asList(10, 10, 10, 9)), true, true),
+                new Libro("Libro8", "Autor8", "ISBN08", "Genero8", 4, new ArrayList<>(), new ArrayList<>(Arrays.asList(2, 3, 4)), true, true)
         );
         Usuario usuario04 = new Usuario("Nombre4", "Apellido4", "ID04", librosPrestadosUsuario04, true, false);
         usuarios.add(usuario04);
 
         // Usuario 05
         List<Libro> librosPrestadosUsuario05 = Arrays.asList(
-                new Libro("Libro9", "Autor9", "ISBN09", "Genero9", 7, true, true),
-                new Libro("Libro10", "Autor10", "ISBN10", "Genero10", 2, true, true)
+                new Libro("Libro9", "Autor9", "ISBN09", "Genero9", 7, new ArrayList<>(), new ArrayList<>(Arrays.asList(9)), true, true),
+                new Libro("Libro10", "Autor10", "ISBN10", "Genero10", 7, new ArrayList<>(), new ArrayList<>(Arrays.asList(2, 7)), true, true)
         );
         Usuario usuario05 = new Usuario("Nombre5", "Apellido5", "ID05", librosPrestadosUsuario05, true, false);
         usuarios.add(usuario05);
 
         // Usuario 06
         List<Libro> librosPrestadosUsuario06 = Arrays.asList(
-                new Libro("Libro11", "Autor11", "ISBN11", "Genero11", 3, true, true),
-                new Libro("Libro12", "Autor12", "ISBN12", "Genero12", 8, true, true)
+                new Libro("Libro11", "Autor11", "ISBN11", "Genero11", 3, new ArrayList<>(), new ArrayList<>(Arrays.asList()), true, true),
+                new Libro("Libro12", "Autor12", "ISBN12", "Genero12", 8, new ArrayList<>(), new ArrayList<>(Arrays.asList(10, 1)), true, true)
         );
         Usuario usuario06 = new Usuario("Nombre6", "Apellido6", "ID06", librosPrestadosUsuario06, true, false);
         usuarios.add(usuario06);
 
         // Usuario 07
         List<Libro> librosPrestadosUsuario07 = Arrays.asList(
-                new Libro("Libro13", "Autor13", "ISBN13", "Genero13", 6, true, true),
-                new Libro("Libro14", "Autor14", "ISBN14", "Genero14", 12, true, true)
+                new Libro("Libro13", "Autor13", "ISBN13", "Genero13", 6, new ArrayList<>(), new ArrayList<>(Arrays.asList(10, 10)), true, true),
+                new Libro("Libro14", "Autor14", "ISBN14", "Genero14", 12, new ArrayList<>(), new ArrayList<>(Arrays.asList()), true, true)
         );
         Usuario usuario07 = new Usuario("Nombre7", "Apellido7", "ID07", librosPrestadosUsuario07, true, false);
         usuarios.add(usuario07);
 
         // Usuario 08
         List<Libro> librosPrestadosUsuario08 = Arrays.asList(
-                new Libro("Libro15", "Autor15", "ISBN15", "Genero15", 9, true, true),
-                new Libro("Libro16", "Autor16", "ISBN16", "Genero16", 5, true, true)
+                new Libro("Libro15", "Autor15", "ISBN15", "Genero15", 9, new ArrayList<>(), new ArrayList<>(Arrays.asList(2, 3, 4, 5, 10)), true, true),
+                new Libro("Libro16", "Autor16", "ISBN16", "Genero16", 5, new ArrayList<>(), new ArrayList<>(Arrays.asList(8, 7, 1)), true, true)
         );
         Usuario usuario08 = new Usuario("Nombre8", "Apellido8", "ID08", librosPrestadosUsuario08, true, false);
         usuarios.add(usuario08);
 
         // Usuario 09
         List<Libro> librosPrestadosUsuario09 = Arrays.asList(
-                new Libro("Libro17", "Autor17", "ISBN17", "Genero17", 4, true, true),
-                new Libro("Libro18", "Autor18", "ISBN18", "Genero18", 6, true, true)
+                new Libro("Libro17", "Autor17", "ISBN17", "Genero17", 4, new ArrayList<>(), new ArrayList<>(Arrays.asList(6, 5)), true, true),
+                new Libro("Libro18", "Autor18", "ISBN18", "Genero18", 6, new ArrayList<>(), new ArrayList<>(Arrays.asList(10)), true, true)
         );
         Usuario usuario09 = new Usuario("Nombre9", "Apellido9", "ID09", librosPrestadosUsuario09, true, false);
         usuarios.add(usuario09);
 
         // Usuario 10
         List<Libro> librosPrestadosUsuario10 = Arrays.asList(
-                new Libro("Libro19", "Autor19", "ISBN19", "Genero19", 11, true, true),
-                new Libro("Libro20", "Autor20", "ISBN20", "Genero20", 7, true, true)
+                new Libro("Libro19", "Autor19", "ISBN19", "Genero19", 11, new ArrayList<>(), new ArrayList<>(Arrays.asList()), true, true),
+                new Libro("Libro20", "Autor20", "ISBN20", "Genero20", 7, new ArrayList<>(), new ArrayList<>(Arrays.asList()), true, true)
         );
         Usuario usuario10 = new Usuario("Nombre10", "Apellido10", "ID10", librosPrestadosUsuario10, true, false);
         usuarios.add(usuario10);
