@@ -6,15 +6,13 @@ public class MenuPrincipal {
 
     private final MenuUsuario menuUsu;
     private final MenuLibro menuLib;
-    //private MenuPrestamo menuPres;
-    //private MenuInventario menuInv;
+    private MenuPrestamo menuPres;
     private final Scanner scanner;
 
     public MenuPrincipal() {
         this.menuUsu = new MenuUsuario();
         this.menuLib = new MenuLibro();
-        //this.menuPres = new MenuPrestamo();
-        //this.menuInv = new MenuIventario();
+        this.menuPres = new MenuPrestamo();
         this.scanner = new Scanner(System.in).useDelimiter("\n");
     }
 
@@ -36,7 +34,6 @@ public class MenuPrincipal {
                 System.out.println("1) Gestion de Usuarios.");
                 System.out.println("2) Gestion de Libros.");
                 System.out.println("3) Gestion de Prestamos.");
-                System.out.println("4) Gestion de Inventarios.");
                 System.out.println("5) Salir del programa.");
 
                 System.out.println("");
@@ -54,16 +51,12 @@ public class MenuPrincipal {
                         presioneTecla();
                         menuPrincipal();
                         break;
-                    //case 3:
-                    //    menuPres.menuPrestamo();
-                    //    presioneTecla();
-                    //    menuPrincipal();
-                    //    break;
-                    //case 4:
-                    //    menuInv.menuInventario();
-                    //    presioneTecla();
-                    //    menuPrincipal();
-                    //    break;
+                    case 3:
+                        menuPres.menuPrestamo();
+                        presioneTecla();
+                        menuPrincipal();
+                        break;
+
                     case 5:
                         System.out.println("Usted Salio del programa con Exito.");
                         break;

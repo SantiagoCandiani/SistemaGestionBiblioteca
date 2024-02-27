@@ -122,9 +122,11 @@ public class LibroServicio {
     public Libro obtenerLibroPorISBN(String ISBN) {
         for (Libro libro : listaLibros) {
             if (libro.getISBN().equals(ISBN)) {
+                System.out.println("tengo libro");
                 return libro;
             }
         }
+        System.out.println("soy libro nulo");
         return null; // Retorna null si no se encuentra ningún libro con el ISBN proporcionado
     }
 
@@ -163,6 +165,21 @@ public class LibroServicio {
         }
         if (librosEncontrados.isEmpty()) {
             System.out.println("No se encontraron libros con el genero '" + genero + "'.");
+        }
+        return librosEncontrados;
+    }
+
+    // Método para buscar libros por autor
+    public List<Libro> buscarLibrosPorAutor(String autor) {
+        List<Libro> librosEncontrados = new ArrayList<>();
+
+        for (Libro libro : listaLibros) {
+            if (libro.getAutor().equalsIgnoreCase(autor)) {
+                librosEncontrados.add(libro);
+            }
+        }
+        if (librosEncontrados.isEmpty()) {
+            System.out.println("No se encontraron libros para el autor '" + autor + "'.");
         }
         return librosEncontrados;
     }

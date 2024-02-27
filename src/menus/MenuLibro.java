@@ -36,9 +36,12 @@ public class MenuLibro {
                 System.out.println("5) Dar de Baja un Libro.");
                 System.out.println("6) Dar de Baja todos los Libros.");
                 System.out.println("7) Buscar un Libro por ISBN.");
-                System.out.println("8) Buscar un Libro por su titulo.");
+                System.out.println("8) Filtrar libros por titulo.");
                 System.out.println("9) Filtrar libros por genero.");
-                System.out.println("10) Salir al menú principal.");
+                System.out.println("10) Filtrar libros por Autor.");
+                System.out.println("11) Dejar la reseña a un libro.");
+                System.out.println("12) Calificar un libro.");
+                System.out.println("13) Salir al menú principal.");
 
                 System.out.println("");
                 System.out.print("Ingrese una opción: ");
@@ -91,18 +94,24 @@ public class MenuLibro {
                         presioneTecla();
                         break;
                     case 10:
+                        System.out.println("Ingrese el nombre completo del autor:");
+                        String autor = scanner.next();
+                        lServicio.mostrarLibros(lServicio.buscarLibrosPorAutor(autor));
+                        presioneTecla();
+                        break;
+                    case 11:
                         System.out.println("Seleccione el ISBN del Libro a reseñar de la siguiente lista:");
                         lServicio.obtenerTodosLosLibros();
                         lServicio.dejarResenia(scanner.next());
                         presioneTecla();
                         break;
-                    case 11:
+                    case 12:
                         System.out.println("Seleccione el ISBN del Libro a calificar de la siguiente lista:");
                         lServicio.obtenerTodosLosLibros();
                         lServicio.calificarLibro(scanner.next());
                         presioneTecla();
                         break;
-                    case 12:
+                    case 13:
                         System.out.println("Saliendo del menú Libro...");
                         presioneTecla();
                         break;
@@ -119,6 +128,6 @@ public class MenuLibro {
                 opcion = 0; // Restablecer la opción para evitar un bucle infinito
             }
 
-        } while (opcion != 12);
+        } while (opcion != 13);
     }
 }

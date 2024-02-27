@@ -180,9 +180,11 @@ public class UsuarioServicio {
     public Usuario obtenerUsuarioPorId(String idUsuario) {
         for (Usuario usuario : usuarios) {
             if (usuario.getNumeroIdentificacion().equals(idUsuario)) {
+                System.out.println("tengo usuario");
                 return usuario;
             }
         }
+        System.out.println("soy usuario nulo");
         return null; // Retorna null si no se encuentra ningún usuario con el ID proporcionado
     }
 
