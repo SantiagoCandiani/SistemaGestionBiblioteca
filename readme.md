@@ -14,7 +14,7 @@ La aplicación está diseñada para que los usuarios puedan administrar el inven
 
 ## Tecnologías utilizadas
 
-- Java 17 (JDK 14)
+- Java 17 (JDK 17)
 
 ## Herramientas de desarrollo
 
